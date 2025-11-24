@@ -9,7 +9,6 @@ export class User extends UserAbstract {
     super(userName);
   }
 
-  
   override generateUserID(): number {
     User.userCount++;
     return User.userCount;
@@ -20,11 +19,8 @@ export class User extends UserAbstract {
   }
 
   public setRoom(room: Room) {
-    this.room = room;    
-
+    this.room = room;
   }
-
-
 
   private setID(userID: number): boolean {
     this.userID = userID;
@@ -34,6 +30,4 @@ export class User extends UserAbstract {
   getUserID(): number {
     return this.userID;
   }
-
-
 }
