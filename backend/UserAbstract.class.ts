@@ -9,4 +9,12 @@ export abstract class UserAbstract {
   }
 
   abstract generateUserID(): number;
+
+  setUserName(newName: string): void {
+    this.userName = newName;
+  }
+
+  getUserName(): string {
+    return this.userName;
+  }
 }

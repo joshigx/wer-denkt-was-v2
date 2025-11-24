@@ -4,7 +4,7 @@ import { User } from "./User.class.ts";
 export class Room extends RoomAbstract {
   public static lobby: Room = new Room();
   private static roomCount: number = 0;
-  protected userList: User[] = [];
+  protected override userList: User[] = [];
 
   constructor() {
     super();
@@ -19,13 +19,13 @@ export class Room extends RoomAbstract {
     return Room.roomCount;
   }
 
-  
-  private setRoomNumber() {}
+  private setRoomNumber() {
+    console.log("You are not allowed to set roomNumber manually");
+  }
 
   public getRoomNumber(): number {
     return this.roomID;
   }
-
 
   public setUserList(userList: User[]): boolean {
     this.userList = userList;
@@ -34,14 +34,5 @@ export class Room extends RoomAbstract {
   }
   public getUserList(): User[] {
     return this.userList;
-  }
-
-  public hasUser(user: User): number {
-    //returns -1 for false, and for true the index of the user element in den userList
-    const isInRoom: number = this.getUserList().findIndex((element) => {
-      return element.getUserID() === user.getUserID();
-    });
-
-    return isInRoom;
   }
 }
