@@ -1,4 +1,5 @@
 import { RoomAbstract } from "./RoomAbstract.class.ts";
+import { RoomManager } from "./RoomManager.class.ts";
 import { User } from "./User.class.ts";
 
 export class Room extends RoomAbstract {

@@ -14,7 +14,14 @@ RoomManager.moveUser(user1, room1);
 RoomManager.moveUser(user2, room1);
 RoomManager.moveUser(user3, room1);
 RoomManager.moveUser(user4, room1);
-View.showAllRooms();
+View.logAllRooms();
 RoomManager.moveUser(user3, room2);
 RoomManager.moveUser(user4, room2);
-View.showAllRooms();
+View.logAllRooms();
+
+const name = prompt("Please enter name:", "Josua")
+console.log("Name: ", name);
+
+console.log(JSON.stringify(room1));
+
+

@@ -2,13 +2,34 @@ import { Room } from "./Room.class.ts";
 import { User } from "./User.class.ts";
 
 export class RoomManager {
-  public static roomList: Room[] = [];
+  private static roomList: Room[] = [];
 
   constructor() {}
 
   public static getRoomList(): Room[] {
     //verhindert, dass man mit getRoomList, die eigentliche Liste verändert
     return RoomManager.roomList.slice();
+  }
+
+  //returns the Room of the user, if it exists, otherwise null
+  public static findRoomOf(user: User): Room | null {
+    let searchedRoom: Room | null = null;
+
+    function callbackfn(room: Room) {
+      if (room.getUserIndexOf(user) !== -1) {
+        searchedRoom = room;
+      }
+
+      else  {
+      searchedRoom = null;
+    }
+
+
+    }
+    RoomManager.getRoomList().forEach(callbackfn)
+
+    return searchedRoom;
+
   }
 
   public static moveUser(user: User, targetRoom: Room) {
@@ -31,9 +52,6 @@ export class RoomManager {
 
       //adding to targetRoot
       targetRoom.addUser(user);
-
-      //adds room to user
-      user.setRoom(targetRoom);
     }
   }
 

@@ -6,10 +6,9 @@ const template: string = await Deno.readTextFile("./index.html");
 
 // Any HTTP methods
 app.all("/", (c) => {
-  const name: string = "Welt";
-  const html = template.replace("{{name}}", name);
+
   //c.status(404)
-  return c.html(html);
+  return c.text("Hallo");
 });
 
 // Any HTTP methods
