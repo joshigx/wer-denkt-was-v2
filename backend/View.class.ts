@@ -1,24 +1,17 @@
 import { RoomManager } from "./RoomManager.class.ts";
 
 export class View {
+  constructor() {
+  }
 
-    constructor() {
+  public static showAllRooms() {
+    RoomManager.getRoomList().forEach((element) => {
+      console.log(`In Raum: ${element.getRoomID()} sind folgende Nutzer:`);
 
-    }
-
-
-    public static showAllRooms() {
-        let allRooms: string = "";
-
-        RoomManager..forEach(element => {
-            
-        });
-
-
-        console.log();
-        
-    }
-
-
-
+      element.getUserList().forEach((element) => {
+        console.log(`  ID:      ${element.getUserID()}`);
+        console.log(`  Name:    ${element.getUserName()} \n`);
+      });
+    });
+  }
 }
