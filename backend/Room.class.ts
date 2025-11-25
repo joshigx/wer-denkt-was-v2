@@ -1,10 +1,9 @@
 import { RoomAbstract } from "./RoomAbstract.class.ts";
-import { RoomManager } from "./RoomManager.class.ts";
 import { User } from "./User.class.ts";
 
 export class Room extends RoomAbstract {
-  public static lobby: Room = new Room();
   private static roomCount: number = 0;
+  public static lobby: Room = new Room();
   protected override userList: User[] = [];
 
   constructor() {
@@ -16,23 +15,15 @@ export class Room extends RoomAbstract {
    */
 
   override generateRoomID(): number {
-    Room.roomCount++;
-    return Room.roomCount;
+    return Room.roomCount++;
   }
 
-  private setRoomID() {
-    console.log("You are not allowed to set roomNumber manually");
-  }
 
+  
   public getRoomID(): number {
     return this.roomID;
   }
 
-  private setUserList(userList: User[]): boolean {
-    this.userList = userList;
-
-    return true;
-  }
   public getUserList(): User[] {
     return this.userList;
   }
@@ -58,9 +49,6 @@ export class Room extends RoomAbstract {
 
   public removeUser(user: User) {
     const index = this.getUserIndexOf(user);
-
-    if (index !== -1) {
-      this.userList.splice(index, 1);
-    }
+    this.userList.splice(index, 1);
   }
 }

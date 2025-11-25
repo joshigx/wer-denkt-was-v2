@@ -2,57 +2,35 @@ import { Room } from "./Room.class.ts";
 import { User } from "./User.class.ts";
 
 export class RoomManager {
-  private static roomList: Room[] = [];
+  private static roomList: Room[] = [Room.lobby];
 
   constructor() {}
 
   public static getRoomList(): Room[] {
-    //verhindert, dass man mit getRoomList, die eigentliche Liste verändert
-    return RoomManager.roomList.slice();
+    return RoomManager.roomList;
   }
 
   //returns the Room of the user, if it exists, otherwise null
   public static findRoomOf(user: User): Room | null {
-    let searchedRoom: Room | null = null;
-
-    function callbackfn(room: Room) {
-      if (room.getUserIndexOf(user) !== -1) {
-        searchedRoom = room;
+    for (let i = 0; i < RoomManager.roomList.length; i++) {
+      const room = RoomManager.roomList[i];
+      const index = room.getUserIndexOf(user);
+      if (index !== -1) {
+        return room;
       }
-
-      else  {
-      searchedRoom = null;
     }
-
-
-    }
-    RoomManager.getRoomList().forEach(callbackfn)
-
-    return searchedRoom;
-
+    return null;
   }
 
   public static moveUser(user: User, targetRoom: Room) {
-    //save original room object
-    const originRoom: Room | null = user.getRoom();
-
-    if (originRoom === targetRoom) {
-      return;
+    if (targetRoom.getUserIndexOf(user) !== -1) {
+      return; 
     }
 
-    //test if user is already in this room
-    if (
-      (originRoom !== targetRoom) &&
-      (targetRoom.getUserIndexOf(user) === -1)
-    ) {
-      //removes from orginRoom
-      if (originRoom) {
-        originRoom.removeUser(user);
-      }
 
-      //adding to targetRoot
-      targetRoom.addUser(user);
-    }
+    RoomManager.findRoomOf(user)?.removeUser(user);
+    //adding to targetRoot
+    targetRoom.addUser(user);
   }
 
   public static kickUser(user: User) {
@@ -68,6 +46,8 @@ export class RoomManager {
   }
 
   public static createUser(name: string): User {
-    return new User(name);
+    const ret: User = new User(name);
+    Room.lobby.addUser(ret);
+    return ret;
   }
 }

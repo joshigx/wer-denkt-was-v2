@@ -4,8 +4,8 @@ export abstract class UserAbstract {
   //abstract room;
 
   constructor(userName: string) {
-    this.userName = userName;
     this.userID = this.generateUserID();
+    this.userName = userName;
   }
 
   abstract generateUserID(): number;

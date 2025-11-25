@@ -19,10 +19,10 @@ export class User extends UserAbstract {
 
   }
 
-  private setID(userID: number): boolean {
-    this.userID = userID;
-    return true;
-  }
+  // private setID(userID: number): boolean {
+  //   this.userID = userID;
+  //   return true;
+  // }
 
   getUserID(): number {
     return this.userID;

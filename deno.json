@@ -6,6 +6,9 @@
     "start": "deno run --allow-net main.ts"
   },
   "compilerOptions": {
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
     "jsx": "precompile",
     "jsxImportSource": "hono/jsx"
   }
