@@ -6,8 +6,7 @@ export class View {
 
   public static logAllRooms() {
     console.log("\nAlle Räume: \n");
-    
-    
+
     RoomManager.getRoomList().forEach((element) => {
       console.log(`In Raum: ${element.getRoomID()} sind folgende Nutzer:`);
 
@@ -18,6 +17,11 @@ export class View {
     });
   }
 
-  public static getRoomOverviewJSON() {
+  public static getRoomOverviewJSON(): string | null {
+    if (JSON.stringify(RoomManager.getRoomList())) {
+      return JSON.stringify(RoomManager.getRoomList());
+    }
+
+    return null;
   }
 }

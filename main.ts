@@ -1,4 +1,6 @@
 import { Hono } from "hono";
+import { View } from "./backend/View.class.ts";
+import { Test } from "./backend/testing/test.ts";
 
 const app = new Hono();
 
@@ -7,8 +9,9 @@ const template: string = await Deno.readTextFile("./index.html");
 // Any HTTP methods
 app.all("/", (c) => {
 
+
   //c.status(404)
-  return c.text("Hallo");
+  return c.json(View.getRoomOverviewJSON());
 });
 
 // Any HTTP methods
@@ -24,4 +27,6 @@ app.all("/hello/:name", (c) => {
   return c.html(html);
 });
 
+
+Test.createUser();
 Deno.serve(app.fetch);
