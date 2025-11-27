@@ -1,7 +1,7 @@
 import { Hono } from "hono";
-import { View } from "./view/View.class.ts";
-import { Test } from "./testing/test.ts";
-import data from "./data/data.json" with { type: "json" };
+import { View } from "./views/View.class.ts";
+import { Test } from "../testing/test.ts";
+import data from "../data/data.json" with { type: "json" };
 
 const app = new Hono();
 
