@@ -1,4 +1,4 @@
-import { RoomManager } from "./RoomManager.class.ts";
+import { RoomManager } from "../model/RoomManager.class.ts";
 
 export class View {
   constructor() {

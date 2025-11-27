@@ -1,7 +1,7 @@
 import { Room } from "../Room.class.ts";
 import { RoomManager } from "../RoomManager.class.ts";
 import { User } from "../User.class.ts";
-import { View } from "../View.class.ts";
+import { View } from "../view/View.class.ts";
 
 export class Test {
   public static createUser() {
