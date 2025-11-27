@@ -1,7 +1,8 @@
-import { Room } from "../Room.class.ts";
-import { RoomManager } from "../RoomManager.class.ts";
-import { User } from "../User.class.ts";
-import { View } from "../view/View.class.ts";
+import { Room } from "../model/Room.class.ts";
+import { RoomManager } from "../model/RoomManager.class.ts";
+import { User } from "../model/User.class.ts";
+import { View } from "../src/views/View.class.ts";
+
 
 export class Test {
   public static createUser() {
