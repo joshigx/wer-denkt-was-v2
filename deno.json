@@ -1,4 +1,5 @@
 {
+  "unstable": ["fmt-component"],
   "imports": {
     "hono": "jsr:@hono/hono@^4.10.6"
   },

@@ -1,11 +1,18 @@
 {
   "version": "5",
   "specifiers": {
-    "jsr:@hono/hono@^4.10.6": "4.10.6"
+    "jsr:@hono/hono@^4.10.6": "4.10.6",
+    "npm:sv@*": "0.10.2"
   },
   "jsr": {
     "@hono/hono@4.10.6": {
       "integrity": "bcbbf9753a3570f2fa4609484bae0cead85a3feb110ee9ceb7ffc37d845d9a4d"
+    }
+  },
+  "npm": {
+    "sv@0.10.2": {
+      "integrity": "sha512-eAR0uVXt/hqCsmjW9x63+RuQhcwIth18AjLDe5K/7BozVKtbM7emX4Nd3ylFhDY3k3Fs2OLJ6M9jRn8NrztknA==",
+      "bin": true
     }
   },
   "workspace": {
