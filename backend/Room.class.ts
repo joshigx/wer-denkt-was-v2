@@ -18,8 +18,6 @@ export class Room extends RoomAbstract {
     return Room.roomCount++;
   }
 
-
-  
   public getRoomID(): number {
     return this.roomID;
   }

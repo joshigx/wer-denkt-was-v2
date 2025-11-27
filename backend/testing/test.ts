@@ -28,5 +28,4 @@ export class Test {
   }
 }
 
-
 console.log(JSON.stringify(RoomManager.getRoomList()));

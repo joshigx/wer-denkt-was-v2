@@ -6,15 +6,12 @@
  */
 import type { PageLoad } from "./$types.d.ts";
 
-
 export const load: PageLoad = async ({ fetch }) => {
-
   /**
    * Represents the response object returned from the fetch request to the `/api/dinosaurs` endpoint.
    * The `res` object contains information about the HTTP response, including status, headers, and body.
    */
   const res = await fetch(`/api/dinosaurs`);
-
 
   /**
    * Represents the parsed JSON response containing dinosaur data.

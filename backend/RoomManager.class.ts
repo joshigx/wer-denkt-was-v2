@@ -24,9 +24,8 @@ export class RoomManager {
 
   public static moveUser(user: User, targetRoom: Room) {
     if (targetRoom.getUserIndexOf(user) !== -1) {
-      return; 
+      return;
     }
-
 
     RoomManager.findRoomOf(user)?.removeUser(user);
     //adding to targetRoot

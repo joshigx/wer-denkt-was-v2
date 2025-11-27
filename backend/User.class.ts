@@ -16,7 +16,6 @@ export class User extends UserAbstract {
 
   public getRoom(): Room | null {
     return RoomManager.findRoomOf(this);
-
   }
 
   // private setID(userID: number): boolean {
