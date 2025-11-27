@@ -1,6 +1,7 @@
-import { Room } from "../model/Room.class.ts";
-import { RoomManager } from "../model/RoomManager.class.ts";
-import { User } from "../model/User.class.ts";
+
+import { Room } from "../src/models/Room.class.ts";
+import { RoomManager } from "../src/models/RoomManager.class.ts";
+import { User } from "../src/models/User.class.ts";
 import { View } from "../src/views/View.class.ts";
 
 

@@ -1,7 +1,8 @@
+//run with deno task start
 import { Hono } from "hono";
 import { View } from "./views/View.class.ts";
-import { Test } from "../testing/test.ts";
-import data from "../data/data.json" with { type: "json" };
+import { Test } from "../tests/test.ts";
+import data from "./data/data.json" with { type: "json" };
 
 const app = new Hono();
 
