@@ -11,5 +11,9 @@
     "node-globals",
     "unsafe-proto",
     "sloppy-imports"
-  ]
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  }
 }
