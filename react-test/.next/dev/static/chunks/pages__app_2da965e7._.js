@@ -1,14 +1,14 @@
 (globalThis.TURBOPACK_CHUNK_LISTS || (globalThis.TURBOPACK_CHUNK_LISTS = [])).push({
     script: typeof document === "object" ? document.currentScript : undefined,
     chunks: [
-  "static/chunks/92cbe_next_dist_compiled_e267d8fe._.js",
-  "static/chunks/92cbe_next_dist_shared_lib_833a35eb._.js",
-  "static/chunks/92cbe_next_dist_client_fbc309a6._.js",
-  "static/chunks/92cbe_next_dist_1667888f._.js",
-  "static/chunks/92cbe_next_app_1afc65e2.js",
-  "static/chunks/[next]_entry_page-loader_ts_1083b06e._.js",
-  "static/chunks/aea6f_react-dom_56a429fb._.js",
-  "static/chunks/node_modules__deno_717d34f6._.js",
+  "static/chunks/node_modules_next_dist_compiled_8ca6b690._.js",
+  "static/chunks/node_modules_next_dist_shared_lib_82dc2e9d._.js",
+  "static/chunks/node_modules_next_dist_client_d0aa886c._.js",
+  "static/chunks/node_modules_next_dist_b0a279d5._.js",
+  "static/chunks/node_modules_next_app_72f3d36f.js",
+  "static/chunks/[next]_entry_page-loader_ts_742e4b53._.js",
+  "static/chunks/node_modules_react-dom_4411d9bd._.js",
+  "static/chunks/node_modules_7f09fef0._.js",
   "static/chunks/[root-of-the-server]__45f039c3._.js"
 ],
     source: "entry"

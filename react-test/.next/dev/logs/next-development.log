@@ -1,1 +1,109 @@
-[00:00:00.334] Server  LOG      ✓ Ready in 238ms
+[00:00:00.334] Server  LOG      ✓ Ready in 235ms
+[00:00:01.065] Server  ERROR    ⨯ ./app/like-button.ts:13:13
+Parsing ecmascript source code failed
+  11 |
+  12 |   return (
+> 13 |     <button type="button" onClick={handleClick}>
+     |             ^^^^
+  14 |       Like ({likes})
+  15 |     </button>
+  16 |   );
+
+Expected '>', got 'type'
+
+Import trace:
+  Server Component:
+    ./app/like-button.ts
+    ./app/page.tsx
+
+
+[00:00:01.764] Browser ERROR   uncaughtError: Error: ./app/like-button.ts:13:13
+Parsing ecmascript source code failed
+  11 |
+  12 |   return (
+> 13 |     <button type="button" onClick={handleClick}>
+     |             ^^^^
+  14 |       Like ({likes})
+  15 |     </button>
+  16 |   );
+
+Expected '>', got 'type'
+
+Import trace:
+  Server Component:
+    ./app/like-button.ts
+    ./app/page.tsx
+
+
+[00:00:01.908] Browser ERROR   ./app/like-button.ts:13:13
+Parsing ecmascript source code failed
+  11 |
+  12 |   return (
+> 13 |     <button type="button" onClick={handleClick}>
+     |             ^^^^
+  14 |       Like ({likes})
+  15 |     </button>
+  16 |   );
+
+Expected '>', got 'type'
+
+Import trace:
+  Server Component:
+    ./app/like-button.ts
+    ./app/page.tsx
+[00:00:01.908] Browser ERROR   ./app/like-button.ts:13:13
+Parsing ecmascript source code failed
+  11 |
+  12 |   return (
+> 13 |     <button type="button" onClick={handleClick}>
+     |             ^^^^
+  14 |       Like ({likes})
+  15 |     </button>
+  16 |   );
+
+Expected '>', got 'type'
+
+Import trace:
+  Server Component:
+    ./app/like-button.ts
+    ./app/page.tsx
+[00:00:12.634] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve './like-button.ts'
+  1 | //import React from "react";
+> 2 | import LikeButton from "./like-button.ts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface HeaderProps {
+  5 |   title: string;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:12.634] Server  ERROR    ⨯ ./app/page.tsx:2:1
+Module not found: Can't resolve './like-button.ts'
+  1 | //import React from "react";
+> 2 | import LikeButton from "./like-button.ts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface HeaderProps {
+  5 |   title: string;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:12.767] Browser ERROR   ./app/page.tsx:2:1
+Module not found: Can't resolve './like-button.ts'
+  1 | //import React from "react";
+> 2 | import LikeButton from "./like-button.ts";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | interface HeaderProps {
+  5 |   title: string;
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:12.934] Server  LOG      ✓ Compiled in 18ms
+[00:00:13.253] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
