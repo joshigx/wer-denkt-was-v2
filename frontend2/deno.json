@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "@interactjs/interact": "npm:@interactjs/interact@^1.10.27",
+    "@interactjs/types": "npm:@interactjs/types@^1.10.27",
+    "interactjs": "npm:interactjs@^1.10.27"
+  }
+}

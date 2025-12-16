@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 20, "column": 0}, "map": {"version":3,"sources":["file:///home/josua/wer-denkt-was-v2/react-test/app/page.jsx"],"sourcesContent":["import LikeButton from \"./like-button.ts\";\n\nfunction Header({ title }) {\n  return <h1>{title ? title : \"Default title\"}</h1>;\n}\n\nexport default function HomePage() {\n  const names = [\"Ada Lovelace\", \"Grace Hopper\", \"Margaret Hamilton\"];\n\n\n \n\n  return (\n    <div>\n      <Header title=\"Develop. Preview. Ship.\" />\n      <ul>\n        {names.map((name) => (\n          <li key={name}>{name}</li>\n        ))}\n      </ul>\n      <LikeButton/>\n\n      \n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;;;AAEA,SAAS,OAAO,EAAE,KAAK,EAAE;IACvB,qBAAO,iSAAC;kBAAI,QAAQ,QAAQ;;;;;;AAC9B;AAEe,SAAS;IACtB,MAAM,QAAQ;QAAC;QAAgB;QAAgB;KAAoB;IAKnE,qBACE,iSAAC;;0BACC,iSAAC;gBAAO,OAAM;;;;;;0BACd,iSAAC;0BACE,MAAM,GAAG,CAAC,CAAC,qBACV,iSAAC;kCAAe;uBAAP;;;;;;;;;;0BAGb,iSAAC,gIAAU;;;;;;;;;;;AAKjB"}}]
+}

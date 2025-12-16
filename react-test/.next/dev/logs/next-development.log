@@ -1,0 +1,278 @@
+[00:00:00.338] Server  LOG      ✓ Ready in 238ms
+[00:00:01.687] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.639] Browser ERROR   ./app/layout.js:11:3
+Parsing ecmascript source code failed
+   9 |       <body>{children}</body>
+  10 |     </html
+> 11 |   );
+     |   ^
+  12 | }
+
+Expected '>', got ')'
+[00:00:10.639] Browser ERROR   ./app/layout.js:10:11
+Parsing ecmascript source code failed
+   8 |     <html lang="en">
+   9 |       <body>{children}</body>
+> 10 |     </html<
+     |           ^
+  11 |   );
+  12 | }
+
+Expression expected
+[00:00:11.282] Server  LOG      ✓ Compiled in 2ms
+[00:00:29.195] Server  LOG     It looks like you're trying to use TypeScript but do not have the required package(s) installed.
+Installing dependencies
+
+If you are not trying to use TypeScript, please remove the tsconfig.json file from your package root (and any TypeScript files in your app and pages directories).
+
+[00:00:29.371] Server  ERROR    ⨯ ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.jsx'
+> 1 | import LikeButton from "./like-button.jsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:29.371] Server  ERROR    ⨯ ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.jsx'
+> 1 | import LikeButton from "./like-button.jsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:29.372] Server  ERROR    ⨯ ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.jsx'
+> 1 | import LikeButton from "./like-button.jsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:29.374] Server  ERROR    ⨯ ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.jsx'
+> 1 | import LikeButton from "./like-button.jsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:29.374] Server  ERROR    ⨯ ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.jsx'
+> 1 | import LikeButton from "./like-button.jsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:29.375] Server  ERROR    ⨯ ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.jsx'
+> 1 | import LikeButton from "./like-button.jsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:29.375] Server  ERROR    ⨯ ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.jsx'
+> 1 | import LikeButton from "./like-button.jsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:29.376] Server  ERROR    ⨯ ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.jsx'
+> 1 | import LikeButton from "./like-button.jsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:29.376] Server  LOG      ✓ Compiled in 10ms
+[00:00:29.384] Server  LOG     
+[00:00:29.384] Server  LOG     Installing devDependencies (yarn):
+[00:00:29.384] Server  LOG     - typescript
+[00:00:29.384] Server  LOG     - @types/react
+[00:00:29.384] Server  LOG     - @types/node
+[00:00:29.384] Server  LOG     
+[00:00:29.646] Browser ERROR   ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.jsx'
+> 1 | import LikeButton from "./like-button.jsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:29.844] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:49.327] Server  ERROR    ⨯ ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.tsx'
+> 1 | import LikeButton from "./like-button.tsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:49.327] Server  ERROR    ⨯ ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.tsx'
+> 1 | import LikeButton from "./like-button.tsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:49.329] Server  ERROR    ⨯ ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.tsx'
+> 1 | import LikeButton from "./like-button.tsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:49.329] Server  ERROR    ⨯ ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.tsx'
+> 1 | import LikeButton from "./like-button.tsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:49.329] Server  ERROR    ⨯ ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.tsx'
+> 1 | import LikeButton from "./like-button.tsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:49.330] Server  ERROR    ⨯ ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.tsx'
+> 1 | import LikeButton from "./like-button.tsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:49.330] Server  ERROR    ⨯ ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.tsx'
+> 1 | import LikeButton from "./like-button.tsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:49.331] Server  ERROR    ⨯ ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.tsx'
+> 1 | import LikeButton from "./like-button.tsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:49.360] Server  LOG      ✓ Compiled in 10ms
+[00:00:50.639] Browser ERROR   ./app/page.jsx:1:1
+Module not found: Can't resolve './like-button.tsx'
+> 1 | import LikeButton from "./like-button.tsx";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | function Header({ title }) {
+  4 |   return <h1>{title ? title : "Default title"}</h1>;
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:50.639] Browser ERROR   ./app/like-button.ts:12:13
+Parsing ecmascript source code failed
+  10 |
+  11 |   return (
+> 12 |     <button type="button" onClick={handleClick}>
+     |             ^^^^
+  13 |       Like ({likes})
+  14 |     </button>
+  15 |   );
+
+Expected '>', got 'type'
+
+Import trace:
+  Server Component:
+    ./app/like-button.ts
+    ./app/page.jsx
